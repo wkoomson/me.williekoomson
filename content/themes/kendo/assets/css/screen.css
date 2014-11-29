@@ -1,0 +1,110 @@
+@import url("normalize.css");
+@import url("bootstrap.min.css");
+@import url("ripples.min.css");
+@import url("material-wfont.min.css");
+@import url("casper_icons.css");
+@import url("casper_base_styles.css");
+@import url("casper_utilities.css");
+@import url("casper_general.css");
+@import url("casper_single_post.css");
+@import url("casper_author_profile.css");
+@import url("casper_third_party.css");
+@import url("casper_pagination.css");
+@import url("casper_footer.css");
+@import url("casper_queries.css");
+@import url("casper_animations.css");
+/* ==========================================================================
+   Table of Contents
+   ========================================================================== */
+
+/*
+
+    0.  Normalize
+    1.  Icons
+    2.  General
+    3.  Utilities
+    4.  General
+    5.  Single Post
+    6.  Tag Archive
+    7.  Third Party Elements
+    8.  Pagination
+    9.  Footer
+    10. Media Queries (Tablet)
+    11. Media Queries (Mobile)
+    12. Animations
+
+*/
+
+
+
+section.cover {
+    height: 80%;
+    width: 100%;
+    max-height: 900px;
+    min-height: 600px;
+    background-image: url('../images/cover_image.jpg');
+    background-color: #dddddd;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.projects {
+    padding: 2em 0em;   
+}
+
+.navbar {
+    background: none;
+}
+.navbar-header {
+    padding: 7.2px 0px;
+}
+.card {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    margin: 1em 2em;
+    width: initial;
+    border-radius: 2px;
+    background-color: white;
+    overflow: hidden;
+}
+.post {
+    position: relative;
+    width: 300px;
+    height: 240px;
+    max-width: 710px;
+    margin: 3rem;
+    word-break: break-word;
+    hyphens: auto;
+}
+.post-excerpt {
+    white-space: normal;
+}
+.article-list {
+    display: block;
+    white-space: nowrap;
+    overflow: auto;
+}
+.article-list-item {
+    display: inline-block;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Material Shadows */
+.paper-shadow-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.paper-shadow-2 {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.paper-shadow-3 {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.paper-shadow-4 {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.paper-shadow-5 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

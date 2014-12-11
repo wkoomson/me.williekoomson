@@ -1,0 +1,26 @@
+section.projects_feature {
+	min-height: 90%;
+}
+#project_title.projects_feature {
+	text-align: right;
+	margin-top: 2.3em;
+	margin-bottom: 1em;
+}
+
+#project_description.projects_feature {
+	margin-bottom: 1em;
+}
+
+#project_link.projects_feature {
+	display: block;
+	margin-bottom: 1em;
+}
+
+#project_role.projects_feature {
+	margin-bottom: 1em;
+}
+
+#svg_element.projects_feature {
+	height: 100%;
+	width: 100%;
+}

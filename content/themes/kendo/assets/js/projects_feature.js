@@ -31,7 +31,7 @@ $(function () {
 			"accent_color": "#4A148C",
 			"text_color": "#FFFFFF",
 			"font": "Open Sans",
-			"svg_source": ""
+			"svg_source": "assets/images/medi_project_snap.svg"
 		}
 	]
 

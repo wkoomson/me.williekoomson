@@ -92,4 +92,12 @@ $(function () {
 
 	$.event.trigger("slideChange", [projects, counter]);
 
+	$("#github_logo_svg").velocity({
+		fill: "#fafafa"
+	},{
+		loop: true,
+		easing: "easeOutBounce",
+		duration:  3000
+	});
+
 });

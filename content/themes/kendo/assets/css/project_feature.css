@@ -3,6 +3,13 @@ section.projects_feature {
 	max-height: 92%;
 	overflow: hidden;
 }
+
+#project_container.projects_feature {
+	min-height: 30em;
+	max-height: 40em;
+	overflow: hidden;
+}
+
 #project_title.projects_feature {
 	text-align: right;
 	margin-top: 2.3em;
@@ -25,4 +32,23 @@ section.projects_feature {
 #svg_element.projects_feature {
 	height: 100%;
 	width: 100%;
+}
+
+#github_description.github_feature {
+	font-family: "Roboto Medium";
+	font-size: 6rem;
+	color: white;
+}
+
+#github_image {
+	width: 100%;
+}
+
+#github_container.github_feature {
+	padding: 2em 0em 1em 0em;
+	background-color: #263238;
+}
+
+#github_text_svg:hover {
+	fill: #ffffff;
 }

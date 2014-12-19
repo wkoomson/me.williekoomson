@@ -1,5 +1,7 @@
 section.projects_feature {
 	min-height: 90%;
+	max-height: 92%;
+	overflow: hidden;
 }
 #project_title.projects_feature {
 	text-align: right;

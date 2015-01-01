@@ -45,10 +45,19 @@ section.projects_feature {
 }
 
 #github_container.github_feature {
+	display: block;
 	padding: 2em 0em 1em 0em;
 	background-color: #263238;
 }
 
 #github_text_svg:hover {
 	fill: #ffffff;
+}
+
+#github_logo_svg {
+	fill: #ffffff;
+}
+
+.github_feature {
+	text-decoration: none;
 }

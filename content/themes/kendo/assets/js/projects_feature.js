@@ -92,12 +92,27 @@ $(function () {
 
 	$.event.trigger("slideChange", [projects, counter]);
 
-	$("#github_logo_svg").velocity({
+	/*$("#github_logo_svg").velocity({
 		fill: "#fafafa"
 	},{
 		loop: true,
 		easing: "easeOutBounce",
 		duration:  3000
 	});
-
+*/
+	$("a#github_container").hover(function () {
+		$("#github_logo_svg").velocity({
+			fill: "#2196F3"
+		},{
+			easing: "easeOutBounce",
+			duration: 500
+		});
+	}, function () {
+		$("#github_logo_svg").velocity({
+			fill: "#ffffff"
+		},{
+			easing: "easeInBounce",
+			duration: 500
+		});
+	});
 });

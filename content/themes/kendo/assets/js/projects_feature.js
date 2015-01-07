@@ -101,14 +101,14 @@ $(function () {
 	});
 */
 	$("a#github_container").hover(function () {
-		$("#github_logo_svg").velocity({
+		$("#github_logo_svg").velocity("stop").velocity({
 			fill: "#2196F3"
 		},{
 			easing: "easeOutBounce",
 			duration: 500
 		});
 	}, function () {
-		$("#github_logo_svg").velocity({
+		$("#github_logo_svg").velocity("stop").velocity({
 			fill: "#ffffff"
 		},{
 			easing: "easeInBounce",

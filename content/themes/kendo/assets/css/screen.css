@@ -13,7 +13,9 @@
 @import url("casper_footer.css");
 @import url("casper_queries.css");
 @import url("casper_animations.css");
-@import url("project_feature.css");
+@import url("section_project.css");
+@import url("section_about.css");
+@import url("section_resume.css");  
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
@@ -43,7 +45,7 @@ section.cover {
     width: 100%;
     max-height: 900px;
     min-height: 600px;
-    background-image: url('../images/cover_image.jpg');
+    background-image: url('../images/cover_image_blurred.jpg');
     background-color: #dddddd;
     background-size: cover;
     background-attachment: fixed;
@@ -60,7 +62,7 @@ section.projects {
 }
 .card {
     position: relative;
-    display: block;
+    display: block; 
     padding: 1rem;
     margin: 1em 2em;
     width: initial;
@@ -70,8 +72,8 @@ section.projects {
 }
 .post {
     position: relative;
-    width: 300px;
-    height: 240px;
+    width: 370px;
+    /**height: 240px;**/
     max-width: 710px;
     margin: 3rem;
     word-break: break-word;
@@ -79,6 +81,14 @@ section.projects {
 }
 .post-excerpt {
     white-space: normal;
+    font-size: 2.3rem;
+    color: white;
+    text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+}
+.post-title {
+    font-size: 4rem;
+    color: white !important;
+    text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
 }
 .article-list {
     display: block;

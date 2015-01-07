@@ -2,36 +2,40 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
 {{! The big featured header }}
-<section class="cover">
-    <header class="navbar navbar-static-top" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wk-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">{{@blog.title}}</a>
+<div id="blurred-background">
+    <section class="cover">
+        <header class="navbar navbar-static-top" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#wk-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">{{@blog.title}}</a>
+                </div>
+
+                <nav class="collapse navbar-collapse" id="wk-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
             </div>
+        </header>
 
-            <nav class="collapse navbar-collapse" id="wk-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">GitHub</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    {{! The main content area on the homepage }}
-    <main id="content" class="content" role="main">
-        <div class="container">
-            {{! The tag below includes the post loop - partials/loop.hbs }}
-            {{> "loop"}}
-        </div>
-    </main>
-</section>
+        {{! The main content area on the homepage }}
+        <main id="content" class="content" role="main">
+            <div class="container">
+                {{! The tag below includes the post loop - partials/loop.hbs }}
+                {{> "loop"}}
+            </div>
+        </main>
+        <script src="{{asset 'js/section_cover.js'}}"></script>
+    </section>
+</div>
 {{> "projects"}}
+{{> "about"}}

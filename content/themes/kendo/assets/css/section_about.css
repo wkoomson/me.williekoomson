@@ -1,0 +1,10 @@
+section.about {
+	padding: 2em 0em;
+}
+h1.about {
+	padding-bottom: 1em;
+}
+#face-image.about {
+	height: 200px;
+	float: left;
+}

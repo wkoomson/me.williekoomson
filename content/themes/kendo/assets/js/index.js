@@ -1,8 +1,8 @@
 $(function () {
     $('.fade-to-white').hover(function() {
         $(this).velocity('stop').velocity({
-            backgroundColor: "#FFFFFF",
-            backgroundColorAlpha: "0.9"
+            backgroundColor: "#dadada",
+            backgroundColorAlpha: "0.8"
         },{
             easing: "easeInOutCubic",
             duration: "fast"
@@ -11,7 +11,7 @@ $(function () {
     }, function() {
         $(this).velocity('stop').velocity({
             backgroundColor: "#FFFFFF",
-            backgroundColorAlpha: "0"
+            backgroundColorAlpha: "0.1"
         },{
             easing: "easeInOutCubic",
             duration: "fast"

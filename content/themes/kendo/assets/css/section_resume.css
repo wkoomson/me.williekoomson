@@ -1,0 +1,53 @@
+.resume div.row {
+	margin-bottom: 15px;
+}
+.resume-text {
+	line-height: initial;
+	letter-spacing: 0.01rem;
+}
+p.resume-text {
+	margin-bottom: 3px;
+}
+.resume-title {
+	font-family: "Roboto Light";
+	font-size: 20px;
+	color: #313132;
+	margin-bottom: 5px;
+}
+.resume-thin-small-dark {
+	font-family: "Roboto Thin";
+	font-size: 13px;
+	color: #313132;
+}
+.resume-light-small-dark {
+	font-family: "Roboto Light";
+	font-size: 13px;
+	color: #313132;
+}
+.resume-light-small-light {
+	font-family: "Roboto Light";
+	font-size: 15px;
+	color: #808284;
+}
+.resume-section-title {
+	font-family: "Roboto Medium";
+	font-size: 15px;
+	color: black;
+	text-transform: uppercase;
+}
+.resume-regular-dark {
+	font-family: "Roboto Medium";
+	font-size: 13px;
+	color: #231F20;
+}
+.resume-regular-light {
+	font-family: "Roboto Medium";
+	font-size: 13px;
+	color: #6D6E70;
+}
+.resume-course-title {
+	font-family: "Roboto";
+	font-size: 14px;
+	color: #231F20;
+	font-weight: 400;
+}

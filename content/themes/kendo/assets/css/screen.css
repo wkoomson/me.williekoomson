@@ -63,7 +63,7 @@ section.projects {
 .card {
     position: relative;
     display: block; 
-    padding: 1rem;
+    /**padding: 1rem;**/
     margin: 1em 2em;
     width: initial;
     border-radius: 2px;
@@ -82,13 +82,28 @@ section.projects {
 .post-excerpt {
     white-space: normal;
     font-size: 2.3rem;
-    color: white;
-    text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+    color: white !important;
+    text-shadow: 0px 0px 5px rgba(150, 150, 150, 1) !important;
+    max-height: 240px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.post-excerpt-link{
+    color: white !important;
+    text-decoration: none !important;
+    transition: none !important;
+}
+.post-excerpt-link:hover {
+    text-decoration: none !important;
+    outline: none !important;
+    color: white !important;
 }
 .post-title {
     font-size: 4rem;
     color: white !important;
     text-shadow: 0px 0px 5px rgba(150, 150, 150, 1);
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 .article-list {
     display: block;
@@ -98,7 +113,11 @@ section.projects {
 .article-list-item {
     display: inline-block;
 }
-
+.fade-to-white {
+    display: block;
+    padding: 1rem;
+    background-color: rgba(1,1,1,0);
+}
 ::-webkit-scrollbar { 
     display: none; 
 }

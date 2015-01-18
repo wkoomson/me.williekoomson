@@ -16,6 +16,8 @@ $(function () {
             easing: "easeInOutCubic",
             duration: "fast"
         });
-        $('section.cover').css("background-image", "url('/assets/images/cover_image_blurred.jpg')");
+        $('section.cover').css("background-image", "url('/assets/images/cover_image_blurred.png')");
+        // $('section.cover').css("background-image", "none");
+        // $('section.cover').css("background-color", "#607D8B");
     });
 });

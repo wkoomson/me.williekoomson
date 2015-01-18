@@ -1,0 +1,44 @@
+<section class="contact">
+	<div class="container">
+		<h1 style="margin: 0.4em 0;">Contact</h1>
+		<p>Fill out your information below and let's talk about your project! You will get a response within 5 hours.</p>
+		<form>
+			<div class="form-group row">
+				<div class="col-sm-6">
+					<input type="text" style="height:46px;padding-top:10px" class="form-control floating-label input-lg" placeholder="Preferred Name">
+				</div>
+				<div class="col-sm-6">
+					<input type="email" style="height:46px;padding-top:10px" class="form-control floating-label input-lg" name="optionRadio" placeholder="Email">
+				</div>
+			</div>
+			<p>What type of project are you thinking of?</p>
+			<div class="radio radio-primary">
+				<label>
+					<input type="radio" name="optionRadio" value="design">Graphic and UI/UX Design
+				</label>
+			</div>
+			<div class="radio radio-primary">
+				<label>
+					<input type="radio" name="optionRadio" value="web">Web Development
+				</label>
+			</div>
+			<div class="radio radio-primary">
+				<label>
+					<input type="radio" name="optionRadio" value="mobile">Mobile App Development
+				</label>
+			</div>
+			<div class="radio radio-primary">
+				<label>
+					<input type="radio" name="optionRadio" value="personal">Personal and Portfolio Pages
+				</label>
+			</div>
+			<textarea class="form-control floating-label" rows="5" style="padding-top:1em" placeholder="Any other important details you want to share?"></textarea>
+			<input class="form-control" type="submit" style="height:46px;font-size:21px;">
+		</form>
+	</div>	
+	<script>
+		$(function (){
+			$.material.init();
+		});
+	</script>
+</section>

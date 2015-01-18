@@ -1,4 +1,4 @@
-.resume div.row {
+.resume-container div.row {
 	margin-bottom: 15px;
 }
 .resume-text {
@@ -45,9 +45,57 @@ p.resume-text {
 	font-size: 13px;
 	color: #6D6E70;
 }
+.resume-light-light {
+	font-family: "Roboto Light";
+	font-size: 13px;
+	color: #6D6E70;
+}
 .resume-course-title {
 	font-family: "Roboto";
 	font-size: 14px;
 	color: #231F20;
 	font-weight: 400;
+}
+.resume-large {
+	font-size: 16px;
+}
+.resume-light-italic {
+	font-family: "Roboto Light";
+	font-style: italic;
+	color: #231F20;
+}
+.resume-default-case {
+	text-transform: none;
+}
+.resume-work-exp-iconbox {
+	height: 72px;
+}
+.resume-work-exp-iconbox img {
+	height: 48px;
+	width: 48px;
+	margin: 12px;
+}
+.resume-title-block.collapsed {
+	background-color: #4A148C;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.resume-title-block.collapsed h1 {
+	color: white;
+}
+
+@media (max-width: 991px) {
+	.resume-container {
+		display: none;
+	}
+	.collapse.in {
+		display: none;
+	}
+	.resume-title-block {
+		background-color: #4A148C;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+	.resume-title-block h1 {
+		color: white;
+	}
+
 }

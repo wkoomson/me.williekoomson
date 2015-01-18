@@ -16,6 +16,7 @@
 @import url("section_project.css");
 @import url("section_about.css");
 @import url("section_resume.css");  
+@import url("section_contact.css");
 /* ==========================================================================
    Table of Contents
    ========================================================================== */
@@ -45,8 +46,8 @@ section.cover {
     width: 100%;
     max-height: 900px;
     min-height: 600px;
-    background-image: url('../images/cover_image_blurred.jpg');
-    background-color: #dddddd;
+    background-image: url('../images/cover_image_blurred.png');
+    background-color: #607D8B;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -55,7 +56,7 @@ section.projects {
 }
 
 .navbar {
-    background: none;
+    background: none !important;
 }
 .navbar-header {
     padding: 7.2px 0px;

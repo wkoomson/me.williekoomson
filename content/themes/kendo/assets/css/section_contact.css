@@ -1,0 +1,25 @@
+section.contact {
+	background-color: #202A2F;
+	box-shadow: inset 0px 27px 24px -18px rgba(0,0,0,0.25);
+}
+section.contact h1, section.contact h2, section.contact h3, section.contact h4, section.contact h5, section.contact h6, section.contact p, section.contact input, section.contact label, section.contact textarea {
+	color: white !important;
+}
+section.contact p {
+	margin: 0.75em 0;
+}
+.form-control-wrapper .form-control {
+	height: initial;
+}
+.radio label span {
+	top: 7px;
+}
+.radio label .circle {
+	border: 2px solid white;
+}
+/*input[type="text"], input[type="email"] {
+	margin-bottom: 1em;
+}*/
+footer {
+	background-color: #202A2F;
+}

@@ -1,6 +1,27 @@
-<section class="resume">	
-	<div class="container">
-		 <div class="row">
+<section class="resume">
+	<div class="container-fluid resume-title-block collapsed" data-toggle="collapse" data-target="#resume-collapse" aria-expanded="false" aria-controls="resume-collapse">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3" data-toggle="tooltip" data-placement="top" title="Click to see resume!">
+					<h1 style="display:inline-block;margin:0.4em 0;">Resume</h1>
+				</div>
+				<div class="col-sm-9">
+					<button type="button" onclick="window.open('https://drive.google.com/open?id=0BwUNsBmty1ijcDczQm5OeGNrS3c&authuser=0','_blank');" id="download-resume"class="btn btn-default btn-lg" style="color: white;margin:0.4em;padding:10px 16px;line-height: 3.7em">
+						<span class="glyphicon glyphicon-download" style="color: white;"></span>
+						Download PDF of full resume
+					</button>
+					<script>
+					$(function() {
+						$("#download-resume").click(function (event) {event.stopPropagation();});
+						$('[data-toggle="tooltip"]').tooltip()
+					});
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="container collapse resume-container" id="resume-collapse">
+		<div class="row">
 			 <div class="col-md-3">
 			 	<h1 class="resume-text resume-title">Willie Koomson</h1>
 			 	<p class="resume-text resume-thin-small-dark">Columbia University in the City of New York</p>
@@ -29,8 +50,8 @@
 			 		<p class="resume-text resume-light-small-dark">Cleveland, OH 44111</p>
 			 	</div>
 			 </div>
-		 </div>
-		 <div class="row">
+		</div>
+		<div class="row">
 		 	<div class="col-md-6">
 		 		<h4 class="resume-text resume-section-title">Personal Statement</h4>
 		 		<p style="line-height: 1.5em" class="resume-text resume-light-small-light">
@@ -44,7 +65,7 @@
 		 		<h4 class="resume-text resume-section-title">Education</h4>
 		 		<div class="row">
 		 			<div class="col-md-6">
-		 				<ul style="list-style:none;">
+		 				<ul style="list-style:none;margin:0;">
 		 					<li style="border-style:none none solid none;border-width:1px;border-color:#dadada">
 		 						<p class="resume-text resume-regular-dark">From August 2014 to May 2018</p>
 		 						<p class="resume-text resume-regular-light">Political Science; Computer Science</p>
@@ -71,6 +92,52 @@
 		 			</div>
 		 		</div>
 		 	</div>
-		 </div>
+		</div>
+		<div class="container">
+			<div class="row">
+					<h4 class="resume-text resume-section-title resume-large">Work Experience</h4>
+			</div>
+			<div class="row">
+				<div class="col-md-1 resume-work-exp-iconbox">
+					<img src="assets/images/ugtimes_icon.svg">
+				</div>
+				<div class="col-md-11">
+					<p class="resume-text"><span class="resume-course-title resume-large">Android/Web Developer</span>&nbsp;<span class="resume-light-light resume-large">Fall 2014 - Present</span></p>
+					<p class="resume-text resume-light-small-light resume-large">Leading development and design of Android App for the publication, as well as periodic website fixes</p>
+					<p class="resume-text"><span class="resume-section-title resume-large resume-default-case">The Undergraduate Times (online undergrad publication startup)</span>&nbsp;<span class="resume-light-italic resume-large">New York, NY</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 resume-work-exp-iconbox">
+					<img src="assets/images/common_icon.svg">
+				</div>
+				<div class="col-md-11">
+					<p class="resume-text"><span class="resume-course-title resume-large">Political Science Intern</span>&nbsp;<span class="resume-light-light resume-large">Summer 2014</span></p>
+					<p class="resume-text resume-light-small-light resume-large">Planned and facilitated meetings between foreclosees & banks during a foreclosure forgiveness program</p>
+					<p class="resume-text"><span class="resume-section-title resume-large resume-default-case">Common Pleas Court of Cuyahoga: Foreclosure Mediation</span>&nbsp;<span class="resume-light-italic resume-large">Cleveland, OH</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 resume-work-exp-iconbox">
+					<img src="assets/images/rockwell_icon.svg">
+				</div>
+				<div class="col-md-11">
+					<p class="resume-text"><span class="resume-course-title resume-large">Engineering Development Intern</span>&nbsp;<span class="resume-light-light resume-large">Summer 2013</span></p>
+					<p class="resume-text resume-light-small-light resume-large">Led development of Weather Exhibit for Children's Museum of Cleveland & coordinated with design teams</p>
+					<p class="resume-text"><span class="resume-section-title resume-large resume-default-case">Rockwell Automation</span>&nbsp;<span class="resume-light-italic resume-large">Cleveland, OH</span></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-1 resume-work-exp-iconbox">
+					<img src="assets/images/healthy_icon.svg">
+				</div>
+				<div class="col-md-11">
+					<p class="resume-text"><span class="resume-course-title resume-large">Co-Founder</span>&nbsp;<span class="resume-light-light resume-large">Fall 2012 - Spring 2014</span></p>
+					<p class="resume-text resume-light-small-light resume-large">Created founding documents, applied for grants & designed markeying material (websites, posters, emails)</p>
+					<p class="resume-text"><span class="resume-section-title resume-large resume-default-case">2 out of 3: Health Me! Diabetes Prevention Project</span>&nbsp;<span class="resume-light-italic resume-large">Cleveland, OH</span></p>
+				</div>
+			</div>
+		</div>
+		<h4><a href="https://drive.google.com/open?id=0BwUNsBmty1ijcDczQm5OeGNrS3c&authuser=0">Like what you see? Look at my full resume here.</a></h4>
 	</div>
 </section>

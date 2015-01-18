@@ -1,0 +1,39 @@
+header.post-head {
+	height: 100vh !important;
+	position: relative;
+}
+.post-page .post-title {
+	position: absolute;
+	bottom: 12px;
+	left: 14px;
+	margin-right: 128px;
+	text-align: left;
+	font-family: "Roboto Light";
+	font-size: 4em;
+}
+article.post.post-page {
+	max-width: 100%;
+	width: 100%;
+}
+.post-page .post-footer {
+	margin: 0 auto;
+	border-color: gray;
+}
+.post-page .post-date {
+	font-size: 2.3rem;
+}
+.post-page p {
+	font-size: 24px;
+	line-height: 1.6em;
+	font-family: Georgia;
+}
+@media (max-width: 768px) {
+	.post-page .post-title {
+		margin-right: 64px;
+	}
+}
+@media (max-width: 500px) {
+	.post-page .post-title {
+		font-size: 2em;
+	}
+}

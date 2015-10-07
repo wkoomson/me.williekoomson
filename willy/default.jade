@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+	head
+		// Page Meta
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		title {{meta_title}}
+		meta(name="description", content="{{meta_description}}")
+		meta(name="HandheldFriendly", content="True")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		link(rel="shortcut icon", href="{{asset 'favicon.ico'}}")
+		// End
+
+		// Styles and Scripts
+		link(rel="stylesheet", href="{{asset 'css/screen.css'}}")
+		//script(src="//use.typekit.net/auv4wbe.js")
+		script.
+			try {
+				Typekit.load({async: true});
+			} catch(e) {}
+		// End
+		| {{ghost_head}}
+	body(class="{{body_class}}")
+		div.site-wrapper
+			// Everything is inserted here
+			| {{{body}}}
+			footer.site-footer.clearfix
+			| {{ghost_foot}}

@@ -1,0 +1,85 @@
+| {{!< default}}
+
+// Header
+
+.container 
+	.row
+		.col-sm-2
+			a(href="{{url}}") 
+				img.logo(src="{{@blog.logo}}",alt="{{@blog.title}}")
+		.col-sm-3
+
+		.col-sm-7
+			script(src="//assets.juicer.io/embed.js")
+			link(href="//assets.juicer.io/embed.css", media="all", rel="stylesheet", type="text/css")
+			ul.juicer-feed(data-feed-id="willie-koomson",data-columns="1")
+	.row
+		.col-xs-1
+			ul.social-icon
+				li.social-icon
+					a(href="http://facebook.com/willie.koomson") 
+						img.social-icon(src="{{asset 'images/Facebook.png'}}")
+				li.social-icon
+					a(href="http://instagram.com/bigbrickwillie") 
+						img.social-icon(src="{{asset 'images/Instagram.png'}}")
+				li.social-icon
+					a(href="http:/twitter.com/williekoomson") 
+						img.social-icon(src="{{asset 'images/Twitter.png'}}")
+				li.social-icon
+					a(href="https://github.com/wkoomson") 
+						img.social-icon(src="{{asset 'images/Github.png'}}")
+				li.social-icon
+					a(href="http://linkedin.com/in/williekoomson") 
+						img.social-icon(src="{{asset 'images/Linkedin.png'}}")
+				li.social-icon
+					a(href="http://blackboydebauchery.tumblr.com") 
+						img.social-icon(src="{{asset 'images/Tumblr.png'}}")
+				li.social-icon
+					a(href="https://www.pinterest.com/wkoomson/")
+						img.social-icon(src="{{ asset 'images/Pinterest.png'}}")
+		.col-xs-1
+		.col-xs-3
+			table.main-nav
+				tr
+					td
+					td
+				tr
+					td.left-nav
+						h4 Home
+					td
+				tr
+					td
+					td.right-nav
+						h4 About
+				tr
+					td.left-nav
+						h4 Blog
+					td
+				tr
+					td
+					td.right-nav
+						h4 Portfolio
+				tr
+					td.left-nav
+						h4 Submit
+					td
+				tr
+					td
+					td.right-nav
+						h4 Hire
+				tr
+					td.left-nav
+					td
+				tr
+					td
+					td.right-nav
+		.col-md-7.articles
+			|  {{> "loop"}}
+	.row
+		.col-xs-3
+			input.search-bar(type="search",placeholder="search")
+
+			a(href="https://www.kickstarter.com/projects/5810267/ryzia-a-website-for-hosting-independent-music-vide/description")
+				img.project-link(src="{{asset 'images/Ryzia.png'}}")
+			a(href="https://github.com/wkoomson/Packittrackit")
+				img.project-link(src="{{asset 'images/Packittrackit.png'}}")

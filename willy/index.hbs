@@ -1,0 +1,85 @@
+{{!< default}}
+<!-- Header-->
+<div class="container"> 
+  <div class="row">
+    <div class="col-sm-2"><a href="{{url}}"> <img src="{{@blog.logo}}" alt="{{@blog.title}}" class="logo"/></a></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-7">
+      <script src="//assets.juicer.io/embed.js"></script>
+      <link href="//assets.juicer.io/embed.css" media="all" rel="stylesheet" type="text/css"/>
+      <ul data-feed-id="willie-koomson" data-columns="1" class="juicer-feed"></ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-1">
+      <ul class="social-icon">
+        <li class="social-icon"><a href="http://facebook.com/willie.koomson"> <img src="{{asset 'images/Facebook.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="http://instagram.com/bigbrickwillie"> <img src="{{asset 'images/Instagram.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="http:/twitter.com/williekoomson"> <img src="{{asset 'images/Twitter.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="https://github.com/wkoomson"> <img src="{{asset 'images/Github.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="http://linkedin.com/in/williekoomson"> <img src="{{asset 'images/Linkedin.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="http://blackboydebauchery.tumblr.com"> <img src="{{asset 'images/Tumblr.png'}}" class="social-icon"/></a></li>
+        <li class="social-icon"><a href="https://www.pinterest.com/wkoomson/"><img src="{{ asset 'images/Pinterest.png'}}" class="social-icon"/></a></li>
+      </ul>
+    </div>
+    <div class="col-xs-1"></div>
+    <div class="col-xs-3">
+      <table class="main-nav">
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="left-nav">
+            <h4>Home</h4>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="right-nav">
+            <h4>About</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="left-nav">
+            <h4>Blog</h4>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="right-nav">
+            <h4>Portfolio</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="left-nav">
+            <h4>Submit</h4>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="right-nav">
+            <h4>Hire</h4>
+          </td>
+        </tr>
+        <tr>
+          <td class="left-nav"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="right-nav"></td>
+        </tr>
+      </table>
+    </div>
+    <div class="col-md-7 articles"> {{> "loop"}}</div>
+  </div>
+  <div class="row">
+    <div class="col-xs-3">
+      <input type="search" placeholder="search" class="search-bar"/><a href="https://www.kickstarter.com/projects/5810267/ryzia-a-website-for-hosting-independent-music-vide/description"><img src="{{asset 'images/Ryzia.png'}}" class="project-link"/></a><a href="https://github.com/wkoomson/Packittrackit"><img src="{{asset 'images/Packittrackit.png'}}" class="project-link"/></a>
+    </div>
+  </div>
+</div>

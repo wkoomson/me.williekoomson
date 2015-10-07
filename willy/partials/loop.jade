@@ -1,0 +1,19 @@
+| {{#foreach posts}}
+
+article.front-page-article(class="{{post_class}}")
+	.article-info
+		img.author-image.img-circle(src="{{author.image}}")
+		| {{#foreach tags}}
+		br
+		a.tag(href="url")
+			= '#{{name}}'
+		| {{/foreach}}
+		time.post-date(datetime="{{date format='YYYY-MM-DD'}}") {{date format="DD MMMM YYYY"}}
+	.article-content
+		header.post-header
+			h1.post-title 
+				a(href="{{url}}") {{{title}}}
+		section.post-excerpt
+			p {{excerpt words="150"}}
+
+| {{/foreach}}
